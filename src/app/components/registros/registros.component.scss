@@ -1,0 +1,40 @@
+.card{
+    margin-top: 1em;
+    border: 1px solid #d1d1d1;
+    width: 40%;
+    margin-left:auto; 
+    margin-right:auto;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+
+    .card-title{
+        padding: 5px;
+        font-size: 20px;
+        font-weight: bold;
+        border-bottom: 1px solid #d1d1d1;
+    }
+    .card-content{
+        background-color: #ffffff;
+        border-radius: 0 0 5px 5px;
+    }
+}
+
+table{
+    width: 100%;
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+form{
+    margin-top: 1em;
+
+    input{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+}

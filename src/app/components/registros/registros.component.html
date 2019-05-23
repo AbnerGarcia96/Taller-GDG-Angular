@@ -1,3 +1,31 @@
-<p>
-  registros works!
-</p>
+<div class="container">
+  <div class="content">
+    <button routerLink="/" class="button">Inicio</button>
+
+    <form>
+      <input type="text" name="nombre" [(ngModel)]="nombre">
+      <input type="number" name="edad" [(ngModel)]="edad">
+    </form>
+
+    <div class="card">
+      <div class="card-title">
+        Registros
+      </div>
+
+      <div class="card-content">
+        <table>
+          <thead>
+            <th>Nombre</th>
+            <th>Edad</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Abner</td>
+              <td>22</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
