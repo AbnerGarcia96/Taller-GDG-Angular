@@ -3,8 +3,10 @@
     <button routerLink="/" class="button">Inicio</button>
 
     <form>
-      <input type="text" name="nombre" [(ngModel)]="nombre">
-      <input type="number" name="edad" [(ngModel)]="edad">
+      <input type="text" name="nombre" [(ngModel)]="registroNuevo.nombre" placeholder="Nombre">
+      <input type="number" name="edad" [(ngModel)]="registroNuevo.edad" placeholder="Edad">
+      <button type="button" class="button add" (click)="agregarRegistro()">Agregar</button>
+      <button type="button" class="button delete" (click)="eliminarTodos()">Vaciar</button>
     </form>
 
     <div class="card">
@@ -19,9 +21,9 @@
             <th>Edad</th>
           </thead>
           <tbody>
-            <tr>
-              <td>Abner</td>
-              <td>22</td>
+            <tr *ngFor="let registro of registros">
+              <td>{{ registro.nombre }}</td>
+              <td>{{ registro.edad }}</td>
             </tr>
           </tbody>
         </table>

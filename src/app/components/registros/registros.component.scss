@@ -27,14 +27,25 @@ table{
 
 form{
     margin-top: 1em;
-
+    margin-left:auto; 
+    margin-right:auto;
+    
     input{
-        width: 100%;
         padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
+        margin: 0 1em 0 0;
         border: 1px solid #ccc;
         border-radius: 4px;
         box-sizing: border-box;
+    }
+
+    .add{
+        background-color: #4CAF50;
+        color: #ffffff;
+        margin-right: 1em;
+    }
+
+    .delete{
+        background-color: #F44336;
+        color: #ffffff;
     }
 }
